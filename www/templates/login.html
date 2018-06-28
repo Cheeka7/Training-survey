@@ -1,0 +1,31 @@
+<ion-view>
+
+  <ion-content class="padding">
+    <form class="loginForm">
+      <!-- EMAIL -->
+      <label class="item-login item-input  item-stacked-label" id="loginemail">
+        <span class="input-label" color="#003366">EMAIL</span>
+        <input type="text" ng-model="user.email" style="border-bottom:SOLID #D5D3D3 1px;">
+      </label>
+      <!-- EMAIL REQUIRED ERROR-->
+      <label class="item-login item-input item-stacked-label" id="loginemailerror">
+        <span class="input-label" color="#003366">EMAIL</span><label class="errorValid">Required</label>
+        <input type="text" ng-model="user.email" style="border-bottom:SOLID #FF5252 1px">
+      </label>
+      <!-- PASSOWORD -->
+      <label class="item-login item-input item-stacked-label" id="login_password">
+        <span class="input-label">PASSWORD</span>
+        <input type="password" ng-model="user.password" style="border-bottom:SOLID #D5D3D3 1px;">
+      </label>
+      <!-- PASSWORD REQUIRED ERROR -->
+      <label class="item-login item-input item-stacked-label" id="loginpwerror">
+        <span class="input-label" color="#003366">PASSWORD</span><label class="errorValid">Required</label>
+        <input type="password" ng-model="user.password" style="border-bottom:SOLID #FF5252 1px">
+      </label>
+      <p ng-show="errorMsg" class="errorValid"> {{errorMessage}} </p>
+      <button class="button button-positive button-block login" ng-click="login()">LOGIN  </button>
+      <div class="spacer" style="height: 0px;"></div>
+      <a ui-sref='forgotPassword'  style = "font-size: 16px; color:#4CCEAD; text-decoration: none; padding-left:10px" ng-click = "modal.show()">Forgot password</a>
+    </form>
+  </ion-content>
+</ion-view>

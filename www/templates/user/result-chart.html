@@ -1,0 +1,13 @@
+<ion-view>
+  <ion-nav-bar class="bar-positive">
+    <ion-nav-buttons side="right">
+        <button class="button button-clear btn-white " ng-click="logout()">Logout</button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content ng-controller="chartCtrl">
+    <h3 class="chart-title"> Analysis of the questions answered </h3>
+      <h3 class="chart-title"> Your answered {{noOfCorrectAnswers}} out of the {{noOfQuestions}} questions correctly </h3>
+    <!-- <h3 class="chart-title"> Your score is {{result | number:2}} </h3> -->
+    <canvas id="pie" class="chart chart-pie" chart-data="data" chart-labels="labels" legend="true" series="series"></canvas>
+  </ion-content>
+</ion-view>

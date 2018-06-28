@@ -1,0 +1,8 @@
+{
+  "name": "training",
+  "app_id": "ee6dd287",
+  "type": "ionic1",
+  "watchPatterns": [
+    "scss/**/*"
+  ]
+}

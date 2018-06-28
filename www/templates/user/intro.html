@@ -1,0 +1,39 @@
+<ion-view>
+  <ion-nav-bar class="bar-positive">
+    <ion-nav-buttons side="left">
+         <button class="button button-clear  ion-arrow-left-c" ng-click="back()"></button>
+     </ion-nav-buttons>
+
+     <ion-nav-buttons side="right">
+        <button class="button button-clear btn-white " ng-click="logout()">Logout</button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content>
+    <div class="upload-container">
+    <ion-card-content>
+      <h3 class="heading-text">{{heading}}</h3>
+
+        <div ng-if="video">
+          <video class="img-question" controls>
+            <source ng-src={{trustSrc(videoRef)}} type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div ng-if="img">
+          <img ng-src={{imgRef}} class="img-question"/>
+        </div>
+
+        <div ng-repeat = "text in parts track by $index" class="para-container">
+        <p>{{text}}</p>
+        </div>
+
+            <!-- <button type="text" class="file_input_replacement">Upload a file here</button>
+            <input type="file" name="uploaded_file" class="file_input_with_replacement" ng-model-instant id="fileToUpload" multiple onchange="angular.element(this).scope().setFiles(this)"/> -->
+      </ion-card-content>
+    </div>
+  </ion-content>
+  <div class="bar bar-footer">
+      <button class="button button-positive button-block footer" ng-click="next()">Next</button>
+  </div>
+</ion-view>

@@ -1,0 +1,34 @@
+<ion-view>
+  <ion-nav-bar class="bar-positive">
+  </ion-nav-bar>
+  <ion-content>
+    <div class="question-container">
+      <div class="item item-divider question-divider">
+          {{dataSet.heading}}
+      </div>
+      <p class="question-content">{{dataSet.name}}</p>
+      <ion-card>
+        <div ng-if="video">
+          <video class="img-question" controls>
+            <source ng-src={{trustSrc(videoRef)}} type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div ng-if="img">
+          <img ng-src={{imgRef}} class="img-question"/>
+        </div>
+        <ion-card-content>
+          <!-- <p class="answer-box">
+            INSERT QUESTION HERE
+          </p> -->
+          <textarea class="answer-box" placeholder="ANSWER HERE" ng-model="$parent.textAnswer"></textarea>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </ion-content>
+  <div class="bar bar-footer">
+    <button class="button button-positive button-block footer"  ng-click="record(null)" ng-disabled="checkTextLength()">
+      {{buttonText}}
+    </button>
+  </div>
+</ion-view>

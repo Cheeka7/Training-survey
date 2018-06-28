@@ -1,0 +1,33 @@
+<ion-view>
+  <ion-nav-bar class="bar-positive">
+  </ion-nav-bar>
+  <ion-content>
+    <div class="question-container">
+      <div class="item item-divider question-divider">
+          {{dataSet.header}}
+      </div>
+      <p class="question-content">{{dataSet.name}}</p>
+      <div ng-if="video">
+        <video class="img-question" controls>
+          <source ng-src={{trustSrc(videoRef)}} type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div ng-if="img">
+        <img ng-src={{imgRef}} class="img-question"/>
+      </div>
+      <div class="range" id="red">
+        <i class="icon ion-ios7-lightbulb-outline"></i>
+        <input type="range" ng-model="data1.rating" max="10" style="-webkit-slider-thumb:before {background: green !important;}">
+        <i class="icon ion-ios7-lightbulb"></i>
+      </div>
+      <p class="rating-text">Number : {{data1.rating}}</p>
+    </div>
+  </ion-content>
+  <div class="bar bar-footer">
+      <button class="button button-positive button-block footer" ng-click="record(data1.rating)">
+        {{buttonText}}
+        <icon class="button-icon ion-arrow-right-c"></icon>
+      </button>
+    </div>
+</ion-view>

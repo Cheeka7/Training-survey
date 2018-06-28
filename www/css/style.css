@@ -1,0 +1,366 @@
+
+/*LOGIN PAGE */
+.login {
+    margin: 0 0 0 0;
+}
+.item-login {
+    border-color: #004C97;
+		padding: 6px 0 5px 0;
+}
+
+.loginForm {
+  margin: 50% 8% 0 8%;
+}
+.input, .p, .div{
+	font-family: "ubuntu", verdana, sans-serif;
+}
+
+
+span.input-label {
+    color: #004C97;
+    font-size: 14px;
+		font-family: "ubuntu", verdana, sans-serif;
+    width:auto;
+    max-width: 400px;
+}
+
+.errorValid {
+    color: #FF5252;
+    font-size: 14px;
+}
+
+label.errorValid{
+  float: right;
+}
+button.button.button-positive.button-block.login{
+  margin-top: 10%;
+}
+
+
+/* CHANGE PASSWORD PAGE */
+p.pwText
+{
+  font-weight: bold;
+}
+
+/* SLIDER PAGE */
+
+div.intro_wrapper {
+	width: 100%;
+	background-color: #004C97;
+}
+.intro_wrapper img {
+	width: 90%;
+  padding-top: 20px;
+  margin-bottom: -5px;
+  padding-left: 8%;
+}
+.intro_title {
+	background-color: #004C97;
+}
+.intro_title h3 {
+	font-family: "ubuntu", verdana, sans-serif;
+	font-size: 20px;
+	text-transform: none;
+	text-align: center;
+	color: #fff;
+  padding: 15px;
+}
+.bar-footer {
+	background-image: none;
+  /*height: 114px;
+  padding-top: 38px;*/
+  margin-bottom: 20px;
+  position: absolute;
+  z-index: 1;
+}
+.bar-footer a {
+	text-decoration: none;
+	color: #004C97;
+	font-family: "ubuntu", verdana, sans-serif;
+	font-size: 20px;
+	padding-left: 15px;
+}
+.bar-footer i.ion {
+	float: right;
+  padding-right: 20px;
+  font-size: 20px;
+  color: #004C97;
+  cursor: pointer;
+}
+.bar .button.button-clear.start {
+	font-size: 17px;
+  font-family: "ubuntu", verdana, sans-serif;
+  font-weight: bold;
+  background-color: #004C97;
+  color: #fff;
+  padding: 4px 4px;
+  margin-top: -10px;
+  opacity: 1;
+  width:80px;
+}
+.slider {
+	height: 100%;
+}
+.slider-pager {
+  bottom: 35px;
+  z-index: 3;
+  width: 45%;
+  margin-left: 28%;
+}
+.slider-pager .slider-pager-page i.ion-record:before {
+	/*color: #fff;*/
+	color: #004C97;
+}
+.slider-pager .slider-pager-page.active i.ion-record:before {
+	color: #004C97;
+}
+
+
+
+
+.slider {
+    padding-top: 20%;
+    height: 35em;
+}
+
+h1.welcome-text {
+    text-align: center;
+    padding-top: 20%;
+}
+/*ion-content.padding.scroll-content.ionic-scroll, ion-view.pane{
+    background-color: #191970;
+}
+*/
+
+ion-label.input-label, .input-text{
+    color: #191970;
+    background-color: white;
+}
+
+
+p.rating-text{
+  text-align: center;
+}
+
+.item.item-divider.question-divider{
+  margin-bottom: 15%;
+  word-break: break-word;
+  white-space: normal;
+}
+
+p.question-content.ng-binding {
+    padding-left: 5%;
+    font-size: 18px;
+    padding-bottom: 10%;
+}
+
+i.radio-icon.disable-pointer-events.icon.ion-checkmark{
+  color: #004C97;
+}
+
+button.button.button-positive.button-block.footer{
+ margin:0 0 0 0;
+}
+button.admin.footer{
+  width: 30%;
+}
+
+div.bar.bar-footer {
+    height: 9%;
+    background: white;
+    margin-bottom: 0px;
+}
+
+
+textarea {
+    width: 95%;
+    height: 7em;
+    border: 1px solid black;
+}
+
+img.img-question{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    height: 7em;
+}
+
+video.img-question {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    border: 1px solid;
+    margin-bottom: 10%;
+}
+
+.answer-box{
+    margin: 3% 3% 3% 3%;
+}
+
+
+/*thankyou page*/
+i.ion-checkmark-round {
+    font-size: -webkit-xxx-large;
+  }
+
+header#header {
+  text-align: center;
+  margin-top:40%;
+}
+
+p.copyright-text{
+  font-weight: bold;
+}
+
+p.thankyou-content
+{
+  text-align: center;
+}
+
+
+canvas#pie {
+    margin-top: 40%;
+}
+
+h3.chart-title {
+    margin-top: 10%;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+/*File upload*/
+table { border-collapse: collapse; }
+.percent {
+    position: absolute; width: 300px; height: 14px; z-index: 1; text-align: center; font-size: 0.8em; color: white;
+}
+.progress-bar {
+    width: 300px;
+    height: 14px;
+    border-radius: 10px;
+    border: 1px solid #CCC;
+    border-image: initial;
+}
+.uploaded {
+    padding: 0;
+    height: 18px;
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#66cc00), to(#4b9500));
+    border-image: initial;
+}
+
+
+
+.upload-container {
+    margin-top: 7%;
+    margin-left: 5%;
+}
+
+.admin-summary-container {
+  margin-top: 7%;
+}
+
+.admin-upload-container {
+    margin-left: 5%;
+    margin-top: 0;
+}
+
+.para-box, input.heading-box{
+  margin-top: 10%;
+  width: 85%;
+  margin-bottom:10%;
+  padding: 2% 2% 2% 2%;
+}
+
+input.heading-box {
+    border: 1px solid black;
+}
+
+input.file-input {
+    background: #004C97;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 3%;
+    width: 75%;
+}
+
+label.upload-label{
+  color: #004C97;
+  margin-bottom: 2%;
+}
+
+div.uploaded-files {
+    margin-top: 4%;
+}
+
+div.progress-container {
+    margin-top: 4%;
+}
+
+figcaption.caption-img{
+    text-align: center;
+}
+
+
+
+/*Summary*/
+.summaryContainer {
+    margin: 10% 0 0 0;
+}
+
+a.underline{
+  text-decoration: underline;
+}
+
+.chartLink {
+    font-size: 19px;
+    margin-left: 30%;
+}
+
+.downloadLink {
+    font-size: 19px;
+    padding-left: 35%;
+}
+
+.tabRef{
+  width: 60%;
+  font-size: 26px;
+  color: black;
+  padding-left: 5%;
+}
+
+a.delete{
+      color: red;
+      vertical-align: middle;
+      float: right;
+}
+
+
+/* BACK BUTTON */
+button.button.button-clear.ion-arrow-left-c{
+  font-size: 26px;
+}
+
+
+.pdfUpload, div.existingPDF {
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+}
+
+
+/* INTRO PAGE */
+.para-container {
+    margin-left: 2%;
+    margin-right: 4%;
+}
+
+div.question-container{
+  overflow: scroll;
+  padding-bottom: 20%;
+}

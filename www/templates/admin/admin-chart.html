@@ -1,0 +1,14 @@
+<ion-view>
+  <ion-nav-bar class="bar-positive">
+    <ion-nav-buttons side="left">
+         <button class="button button-clear  ion-arrow-left-c" ng-click="back()"></button>
+     </ion-nav-buttons>>
+    <ion-nav-buttons side="right">
+        <button class="button button-clear btn-white " ng-click="logout()">Logout</button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content>
+    <h3 class="chart-title"> Analysis of the questions answered in level: {{level}} group: {{group}}</h3>
+    <canvas id="pie" class="chart chart-pie" chart-data="result" chart-labels="labels" legend="true" series="series"></canvas>
+  </ion-content>
+</ion-view>

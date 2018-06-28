@@ -1,0 +1,31 @@
+<ion-view>
+  <ion-nav-bar class="bar-positive">
+    <ion-nav-buttons side="right">
+        <button class="button button-clear btn-white " ng-click="logout()">Logout</button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content>
+  <div class="admin-summary-container ">
+      <a class="underline chartLink" ng-click="goToUserResults()">Display user results</a>
+      <div class="summaryContainer list" ng-repeat="t in title">
+        <div class ="item" >
+          <span class="tabRef" ng-click= "nav(t.timestamp)">{{t.heading}}</span>
+          <a class="btn btn-danger btn-block delete" ng-click="delete(t.timestamp)">Delete</a>
+        </div>
+      </div>
+
+      <div class="pdfUpload">
+        <label class="upload-label "for="fileToUpload">Select a PDF File to Upload</label><br/>
+        <input type="file" class="file-input" ng-model-instant id="pdfUpload" multiple onchange="angular.element(this).scope().setFiles(this)" />
+        <a class="btn btn-danger btn-block" ng-click="deletePdf()" ng-show="containsFile">Delete</a>
+      </div>
+
+      <a class="underline downloadLink" ng-click="deviceDownload()"> Download </a>
+
+
+    </div>
+    </ion-content>
+    <div class="bar bar-footer">
+        <button class="button button-positive button-block footer" ng-click="add()">Add new page</button>
+    </div>
+</ion-view>

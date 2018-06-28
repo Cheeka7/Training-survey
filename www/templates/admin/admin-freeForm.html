@@ -1,0 +1,37 @@
+<ion-view>
+  <ion-nav-bar class="bar-positive">
+    <ion-nav-buttons side="left">
+         <button class="button button-clear  ion-arrow-left-c" ng-click="back()"></button>
+     </ion-nav-buttons>>
+  </ion-nav-bar>
+
+  <ion-content>
+    <div class="admin-upload-container">
+      <ion-card-content>
+        <input class="heading-box" type="text" placeholder="INSERT HEADING HERE" ng-model="$parent.heading"></textarea>
+
+
+        <label class="upload-label "for="fileToUpload">Select a File to Upload</label><br/>
+        <input type="file" class="file-input" ng-model-instant id="fileToUpload" multiple onchange="angular.element(this).scope().setFiles(this)" />
+        <a class="btn btn-danger btn-block" ng-click="deleteimg()" ng-show="containsFile">Delete</a>
+
+        <div ng-if="video">
+          <video class="img-question" controls>
+            <source ng-src={{trustSrc(videoRef)}} type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div ng-if="img">
+          <img ng-src={{imgRef}} class="img-question"/>
+          <figcaption class="caption-img">{{fileName}}</figcaption>
+        </div>
+
+        <textarea class="para-box" placeholder="INSERT NOTE HERE" ng-model="$parent.paraText"></textarea>
+      </ion-card-content>
+    </div>
+  </ion-content>
+  <div class="bar bar-footer">
+      <button class="button button-positive button-block footer" ng-click="uploadFile($event)" ng-disabled ="isButtonDisabled()">Save</button>
+  </div>
+</iom-view>
