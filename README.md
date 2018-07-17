@@ -10,3 +10,6 @@ There are two types of acesss roles in this app:
 
 
 The app could be integrated with Firebase and the code written is tailor made for that.
+
+
+Please note that the UI of the app is still under development. Cheers!
